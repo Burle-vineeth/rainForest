@@ -1,0 +1,46 @@
+<div class="sayHello">
+    <div class="title">
+        Come say hello. We’re pretty good listeners
+    </div>
+    <div class="title-info">
+        Drop us a line and let us know how we can help your cause
+    </div>
+
+    <div class="formHello">
+        <form [formGroup]="sayHello" action="" (ngSubmit)="submitForm()">
+            <mat-form-field appearance="outline">
+                <mat-label>Your Email </mat-label>
+                <input matInput placeholder="Enter your email" formControlName="mail">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Subject</mat-label>
+                <input matInput placeholder="Enter the Subject" formControlName="subject">
+            </mat-form-field><br>
+            <textarea name="message" id="" cols="30" rows="10" formControlName="message"
+                placeholder="Your Message"></textarea>
+            <div class="form-submission">
+                <button mat-raised-button class="send" color="primary" type="submit">Send</button>
+                <div class="icons-mark">
+                    <span>
+                        <img src="../../assets/facebookicon" alt="">
+                    </span>
+                    <span>
+                        <img src="../../assets/twittericon" alt="">
+                    </span>
+                    <span>
+                        <img src="../../assets/tiktokicon" alt="">
+                    </span>
+                    <span>
+                        <img src="../../assets/instagramicon" alt="">
+                    </span>
+                    <span>
+                        <img src="../../assets/youtubeicon" alt="">
+                    </span>
+                    <span>
+                        <img src="../../assets/linkedinicon" alt="">
+                    </span>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

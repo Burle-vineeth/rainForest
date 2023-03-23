@@ -1,0 +1,234 @@
+.bg-forest-heading {
+    background-image: url('../../assets/forest.jpg');
+    color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height:500px;
+    z-index: -10;
+}
+
+.sub-titles {
+    margin-top: 260px;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.arrow {
+    margin: 5px;
+    font-size: 30px;
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+}
+
+.img-map {
+    text-align: center;
+    padding:20px 10px;
+}
+
+.img-map img {
+    max-width: 1000px;
+}
+
+.system-preserve {
+    margin-top: 350px;
+    padding: 30px 0;
+    padding-bottom: 60px;
+}
+
+.system-preserve .system-title{
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.system-preserve .system-images .image{
+    height: 220px;
+    text-align: center;
+}
+
+.image-text {
+    font-size: larger;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.image-disc {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.readMore {
+    color: rgba(255, 72, 0, 0.795);
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.countries-to-date {
+    text-align: center;
+    padding: 50px 0;
+    background-color: black;
+    color: white;
+}
+
+.countries-to-date .countries-heading {
+    font-size: 33px;
+    margin: 30px 0;
+    /* font-weight: bold; */
+}
+
+.countries-to-date .para {
+    max-width: 1000px;
+    margin: auto;
+    line-height: 1.4rem;
+    font-size: 1.2rem;
+    margin-top: 24px;
+}
+
+.countries-to-date .para-switch {
+    font-size: small;
+    margin-top: 12px;
+    color: rgb(190, 185, 185);
+}
+
+.mission-technology {
+    padding: 70px 0;
+}
+
+.mission-technology .technology {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.mission-technology .technology-video iframe{
+    width: 100%;
+}
+
+.technology-disc {
+    background-color: #eef0e7;
+    margin-left: -11px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.technology-disc .title {
+    letter-spacing: 3px;
+    margin: 10px;
+}
+
+.technology-disc .heading {
+    font-size: 1.9rem;
+    line-height: 2.3rem;
+    text-transform: uppercase;
+}
+.technology-disc .action-button {
+    margin-top: 20px;
+    width: 280px;
+    padding: 15px 0;
+    border: 1px solid orange;
+    color: orange;
+    font-size: small;
+    letter-spacing: 2px;
+    border-radius: 3px;
+}
+
+.theApp {
+    background-color: #eef0e7;
+    padding: 20px 0;
+}
+
+.theApp .theApp-info {
+    width: 95%;
+    margin: auto;
+}
+.theApp .mobilePic {
+    width: 40%;
+    padding-left: 10%;
+    display: inline-block;
+}
+.theApp .mobilePic img {
+    width: 100%;
+    margin-top:-310px;
+}
+
+.theApp .mobilePic-disc {
+    display: inline-block;
+    width: 60%;
+    padding-right: 13%;
+    text-align: center;
+}
+
+.theApp .title {
+    letter-spacing: 2px;
+    margin: 25px 0;
+}
+
+.theApp .heading {
+    font-size: 1.9rem;
+    line-height: 2.1rem;
+    margin: 20px 0;
+}
+
+.theApp .heading-info {
+    margin-bottom: 50px;
+    font-size: large;
+    line-height: 1.5rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.theApp .actions img{
+    max-width: 200px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.aware-images {
+    background-color: black;
+    padding: 35px 40px;
+}
+
+.aware-images img {
+    cursor: pointer;
+}
+
+.aware-images img:hover {
+    opacity: 0.6;
+    background-color: black;
+}
+
+.aware-images .firstSet img{
+    /* height: 300px; */
+    width: 100%;
+}
+
+.aware-images .secondSet img {
+    width: 100%;
+}
+
+.aware-images .image-set {
+    position: relative;
+}
+
+.aware-images .image-info {
+    position: absolute;
+    color: white;
+    bottom: 20px;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    left: 30px;
+    text-align: center;
+    margin-right: 30px;
+    font-weight: bold;
+    line-height: 2rem;
+}
+
+.aware-images .secondSet {
+    margin-top: 10px;
+}
+
+.aware-images .secondSet img{
+    height: 300px;
+}

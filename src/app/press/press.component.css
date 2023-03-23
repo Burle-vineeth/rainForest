@@ -1,0 +1,40 @@
+.main-content {
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 50px;
+    line-height: 60px;
+    margin: 20px 0;
+}
+
+.title-info {
+    text-align: center;
+    font-size: 19px;
+    line-height: 24px;
+    margin: 20px 0;
+}
+
+a {
+    color: orangered;
+    text-decoration: none;
+}
+
+.numbers {
+    text-align: center;
+    background-color: rgba(175, 174, 174, 0.24);
+    padding-bottom: 30px;
+}
+
+.numbers a {
+    margin: 2px;
+    font-size: x-large;
+    color: rgba(0, 0, 0, 0.521);
+}
+
+.numbers .activePage {
+    color: orangered;
+}

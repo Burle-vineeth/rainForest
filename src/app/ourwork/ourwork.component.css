@@ -1,0 +1,166 @@
+.ourWork {
+    margin-top: 60px;
+}
+
+.ourWork .title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 55px;
+    margin: 20px 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.ourWork .title-info {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-size: large;
+    margin-top: 42px;
+    line-height: 1.5rem;
+    margin-bottom: 35px;
+}
+
+.ourWork .workImage img{
+    width: 100%;
+    height: 350px;
+} 
+
+.ourWork  .workImage .img {
+    position: relative;
+}
+
+.ourWork .workImage .image-disc {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+.ourWork .workImage .image-disc div {
+    font-weight: normal;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.ourWork .content-field-image .singleimage {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ourWork .content-field-image img {
+    opacity: 0.5;
+    width: 60%;
+}
+
+.ourWork .content-field-image , .ourWork .content-image-info {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.ourWork .content-field-image img.activebg {
+    opacity: 1;
+}
+
+.content-image-info {
+    background-color: rgba(128, 128, 128, 0.178);
+    padding: 50px 70px;
+}
+
+.content-image-info .title-heading {
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 38px 0;
+    line-height: 2.3rem;
+}
+
+.content-image-info .para {
+    letter-spacing: 1px;
+    margin: 35px 0;
+    font-size: 17px;
+    line-height: 29px;
+}
+
+.content-image-info .side-heading {
+    font-weight: bold;
+    margin: 35px 0;
+    font-size: 19px;
+    line-height: 25px;
+}
+
+.content-image-info .unordered-list {
+    font-size: 17px;
+    line-height: 29px;
+}
+
+.content-image-info .unordered-list li {
+    margin: 10px 0;
+}
+
+.content-image-info .theApp {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 60px;
+}
+
+.content-image-info .theApp .mobilePic{
+    width: 45%;
+    display: inline-block;
+}
+
+.content-image-info .theApp .mobilePic img {
+    width: 100%;
+    margin-top: -350px;
+}
+
+.content-image-info .theApp .mobile-info {
+    width: 55%;
+    display: inline-block;
+    text-align: center;
+}
+
+.content-image-info .theApp .mobile-info .app-title{
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+.mobile-info .app-title-info {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 30px 0;
+}
+
+.mobile-info .disc {
+    font-size: 17px;
+    line-height: 29px;
+    margin: 15px 0 50px 0;
+}
+
+.app-actions img{
+    max-width: 200px;
+}
+
+li a , .para a{
+    color: rgba(255, 68, 0, 0.932);
+}
+li {
+    margin: 3px;
+}
+
+li a:hover {
+    color: blue;
+}
+
+.para a:hover {
+    color: blue;
+}

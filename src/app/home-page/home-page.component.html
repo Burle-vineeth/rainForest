@@ -1,0 +1,170 @@
+<div class="bg-forest-heading">
+    <div class="sub-titles">
+        <mat-icon *ngIf="!playSound" class="arrow" (click)="audioPlay()">play_arrow</mat-icon><mat-icon *ngIf="playSound" (click)="pause()" class="arrow">pause</mat-icon><img
+            src="../../assets/waveAudio.png" alt=""> <br><br><br>
+        <audio #audio src="../../assets/forestBirdsSound"></audio>
+        The most impactful way to stop climate change? Save rainforests.
+    </div>
+</div>
+<div class="system-preserve container">
+    <div class="system-title">
+        HOW OUR SYSTEM HELPS PRESERVE RAINFORESTS
+    </div>
+    <div class="system-images row">
+        <div class="col system-image">
+            <div class="image">
+                <img style="margin-top: 30px; width: 90%;" src="../../assets/treeCutter.jpeg" alt="">
+            </div>
+            <div class="image-text text-center">
+                PREVENT ILLEGAL DEFORESTATION
+            </div>
+            <div class="image-disc">
+                Our mission is to enable our partners-on-the-ground to protect rainforests. Our system sends real-time
+                alerts for chainsaws, trucks, cars and signs of incursion. <a class="readMore" href="">Read more</a>
+            </div>
+        </div>
+        <div class="col system-image">
+            <div class="image">
+                <img src="../../assets/elephant.png" alt="">
+            </div>
+            <div class="image-text text-center">
+                HALT ANIMAL POACHING
+            </div>
+            <div class="image-disc">
+                We can help stop poaching by providing our partners with real-time data and patterns of activity that
+                allow for targeted protections in key strategic areas. <a class="readMore" href="">Read more</a>
+            </div>
+        </div>
+        <div class="col system-image">
+            <div class="image">
+                <img style="margin-top: 40px;" src="../../assets/wavelength.jpeg" alt="">
+            </div>
+            <div class="image-text text-center">
+                ENABLE BIO-ACOUSTIC MONITORING
+            </div>
+            <div class="image-disc">
+                There's more to a rainforest than meets the eye. Our bio-acoustic monitoring capabilities give partners
+                new ways of understanding rainforests. <a href="" class="readMore">Read more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="countries-to-date">
+    <div class="countries-heading">
+        RFCX LED PROJECTS IN 35 COUNTRIES TO-DATE
+    </div>
+    <div class="countries-content">
+        <div class="para">
+            We combine the power of eco-acoustics, AI, and our team of experts to leverage our acoustic technology
+            systems to enable the protection and preservation of threatened ecosystems and endangered species in project
+            sites and in partnership with organizations around the world
+        </div>
+        <div class="para">
+            Our systems detect threats, such as illegal logging, and monitor biodiversity, enabling us to take action
+            against deforestation and climate change and to adapt to the impacts of the ongoing biodiversity loss crisis
+            that's pushing thousands of species towards extinction.
+        </div>
+        <div class="para">
+            By listening to and learning from nature, we can act proactively to inform conservation efforts and protect
+            these species and forests before they are lost forever.
+        </div>
+        <div class="para-switch">
+            (click on icon to switch country)
+        </div>
+    </div>
+    <div class="img-map">
+        <img src="../../assets/map.jpg" alt="">
+    </div>
+</div>
+
+<div class="mission-technology">
+    <div class="row technology">
+        <div class="technology-video col-7">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8VxZHSG4f-Q"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <div class="technology-disc col-5">
+            <div class="title">
+                THE MISSION & TECHNOLOGY
+            </div>
+            <div class="heading">
+                An introduction of Rainforest Connection’s work to protect threatened ecosystems
+            </div>
+            <div class="action">
+                <button class="action-button">
+                    INTRO OF RFCx
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="theApp">
+    <div class="theApp-info">
+        <div class="mobilePic">
+            <img src="../../assets/app_phone.png" alt="">
+        </div>
+        <div class="mobilePic-disc">
+            <div class="title">
+                THE APP
+            </div>
+            <div class="heading">
+                EVER WANTED TO HEAR A RAINFOREST IN REAL-TIME?
+            </div>
+            <div class="heading-info">
+                Download our free app to listen to the sounds of rainforests all over the world.
+            </div>
+            <div class="heading-info">
+                Immerse yourself in the tropical rains of Ecuador, the chatter of endangered wildlife in Costa Rica,
+                peaceful mornings in the jungles of Peru, and so much more
+            </div>
+            <div class="actions">
+                <img src="../../assets/ios.png" alt="">
+                <img src="../../assets/android.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="aware-images">
+    <div class="images">
+        <div class="firstSet row">
+            <div class="col-8 image-set">
+                <img class="image" src="../../assets/koya.jpg" alt="">
+                <div class="image-info">Our Project with the Tembe Indigenous Tribe</div>
+            </div>
+            <div class="col-4 image-set">
+                <img class="image" src="../../assets/ted.jpg" alt="">
+                <div class="image-info">
+                    TEDx talk on our acoustic tech protecting forests & wildlife
+                </div>
+            </div>
+        </div>
+        <div class="secondSet row">
+            <div class="image-set col-3">
+                <img class="image" src="../../assets/rainPlaster.jpg" alt="">
+                <div class="image-info">
+                    How Bioacoustics is affecting Biodiversity
+                </div>
+            </div>
+            <div class="image-set col-3">
+                <img class="image" src="../../assets/tedBoy.jpg" alt="">
+                <div class="image-info">
+                    Watch Topher White's TEDx
+                </div>
+            </div>
+            <div class="image-set col-6">
+                <img class="image" src="../../assets/wakeup.jpg" alt="">
+                <div class="image-info">
+                    A Day in the Life of a Forest
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-say-hello></app-say-hello>
+<app-subscribe></app-subscribe>

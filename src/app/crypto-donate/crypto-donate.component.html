@@ -1,0 +1,53 @@
+<div *ngIf="!commentBlock" class="main-content">
+    <form action="" #formOne [formGroup]="form1" (ngSubmit)="submitForm1()">
+        <div class="title">
+            Crypto donation
+        </div>
+        <div class="modeOfPayment">
+            <mat-form-field appearance="fill">
+                <mat-label>Crypto Coin</mat-label>
+                <mat-select>
+                    <mat-option #coinValue (click)="selectedCoin(coin)" *ngFor="let coin of coins" [value]="coin.value">
+                        {{coin.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="inputField">
+            <input (change)="inputFun()" type="text" name="amount" formControlName="amount">
+        </div>
+        <span>{{ inDol }}</span>
+        <div class="permi">
+            <p><mat-checkbox formControlName="permission" name="permission">Dedicate this donation</mat-checkbox></p>
+        </div>
+        <div class="special">
+            <input type="text" formControlName="special" placeholder="Name of someone special to me">
+        </div>
+        <div class="comment mt-5 pt-5">
+            <span (click)="AddComment()">Add comment</span>
+        </div>
+        <div class="action">
+            <button type="submit">
+                Donate monthly
+            </button>
+        </div>
+    </form>
+</div>
+
+<div *ngIf="commentBlock" class="main-comment">
+    <div class="com-title">
+        <button (click)="AddComment()" mat-flat-button>
+            <mat-icon>keyboard_arrow_left</mat-icon>
+        </button>
+        Comment
+    </div>
+    <div class="text-area">
+        <form [formGroup]="form" action="">
+            <textarea formControlName="commen" name="" id="" cols="30" rows="10"
+                placeholder="Enter your comment"></textarea>
+        </form>
+    </div>
+    <div class="com-action">
+        <button (click)="AddComment()" type="button" mat-raised-button color="primary">Save</button>
+    </div>
+</div>

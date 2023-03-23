@@ -1,0 +1,59 @@
+.sayHello {
+    background-image: url('../../assets/frogSayHello.jpg');
+    background-size: 130%;
+    text-align: center;
+    padding-bottom: 80px;
+    background-repeat: no-repeat;
+}
+
+.sayHello .title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2.2rem;
+    padding-top: 40px;
+}
+
+.sayHello .title-info {
+    margin: 20px 0;
+    font-size: large;
+    padding-bottom: 30px;
+}
+
+.formHello {
+    margin-top: 30px;
+}
+
+.formHello mat-form-field{
+    margin: 20px;
+    border-radius: 5px;
+    width: 330px;
+}
+
+.formHello textarea {
+    width: 700px;
+    border-radius: 15px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: large;
+    margin-bottom: 30px;
+}
+.formHello .form-submission {
+    text-align: start;
+    max-width: 700px;
+    margin: auto;
+}
+
+.formHello .form-submission span {
+    margin: 0 10px;
+}
+
+.formHello .form-submission img {
+    width: 45px;
+    height: auto;
+    cursor: pointer;
+}
+.formHello .icons-mark {
+    float: right;
+}

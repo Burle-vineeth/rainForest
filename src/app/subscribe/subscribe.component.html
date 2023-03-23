@@ -1,0 +1,71 @@
+<div class="subscribe">
+    <div class="main-content row">
+        <div class="platinum col-2">
+            <a style="color: black;text-decoration: none;" href="https://www.guidestar.org/profile/46-2022575"
+                target="_blank">
+                <div class="candid">
+                    <div class="year">
+                        Platinum Transparency 2023
+                    </div>
+                    <div class="can">
+                        Candid.
+                    </div>
+                </div>
+                <div class="candid-info">
+                    highest level of transparency
+                </div>
+            </a>
+        </div>
+        <div class="planet col-2">
+            <a href="https://directories.onepercentfortheplanet.org/profile/rainforest-connection" target="_blank">
+                <div class="img">
+                    <img src="../../assets/globe.png" alt="">
+                </div>
+            </a>
+        </div>
+        <div class="connected col-6">
+            <div class="title">
+                STAY CONNECTED
+            </div>
+            <div class="title-info">
+                Be the first to hear the latest from Painforest Connection.
+            </div>
+            <div class="userDetails">
+                <form [formGroup]="userDetails" action="" (ngSubmit)="submitForm()">
+                    <input type="text" placeholder="First name" formControlName="name">
+                    <input class="mailcom" type="text" Email placeholder="Email" formControlName="mail" email>
+                    <p class="text-danger">{{ errorMsg }}</p>
+                    <button mat-raised-button color="primary">SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container last">
+        <div class="contact">
+            <a routerLink="/#contact">Contact Us</a> &nbsp; | &nbsp;
+            <a routerLink="/privacy"> Privacy Policy</a>
+        </div>
+        <a href="">
+            <img src="../../assets/facebookicon" alt="">
+        </a>
+        <a href="">
+            <img src="../../assets/twittericon" alt="">
+        </a>
+        <a href="">
+            <img src="../../assets/tiktokicon" alt="">
+        </a>
+        <a href="">
+            <img src="../../assets/instagramicon" alt="">
+        </a>
+        <a href="">
+            <img src="../../assets/youtubeicon" alt="">
+        </a>
+        <a href="">
+            <img src="../../assets/linkedinicon" alt="">
+        </a>
+        <div class="rainforest">
+            Rainforest Connection is a 501 <sub>(cX3)</sub> &nbsp;| &nbsp; &copy;2023
+        </div>
+        <div class="rainforest">440 Cobia Drive, Suite 1902, Katy, TX, 77494, USA, +1(415) 792-9472</div>
+    </div>
+</div>

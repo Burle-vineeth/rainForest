@@ -1,0 +1,180 @@
+<div class="body-total">
+    <div class="main-heading">
+        <div class="main-logo">
+            <a routerLink="">
+                <img class="main-logo" src="../../assets/rainForestLogo.png" alt="">
+            </a>
+        </div>
+        <div class="side-heading">
+            <ul class="heading">
+                <li class="top-ul-heading">
+                    <a [ngClass]="{'headColor':valueColor}" #work routerLink="/our_work">
+                        Our Work
+                    </a>
+                </li>
+                <li class="top-ul-heading">
+                    <a [ngClass]="{'headColor':valueColor}"  #work routerLink="impact">
+                        Our Impact
+                    </a>
+                </li>
+                <li class="top-ul-heading">
+                    <a style="cursor: pointer;" [ngClass]="{'headColor':valueColor}"  #work>
+                        Solutions <mat-icon class="droplow">navigate_before</mat-icon>
+                    </a>
+                    <div class="heading-drop-down">
+                        <ul>
+                            <li routerLink="/threat">Threat Detection</li>
+                            <li routerLink="/ecoacoustics">Biodiversity Monitoring</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="top-ul-heading">
+                    <a style="cursor: pointer;" [ngClass]="{'headColor':valueColor}"  #work >
+                        About Us<mat-icon class="droplow">navigate_before</mat-icon>
+                    </a>
+                    <div class="heading-drop-down">
+                        <ul>
+                            <li routerLink="/team">
+                                Team
+                            </li>
+                            <li routerLink="/press">Press</li>
+                            <li>Publications</li>
+                            <li>Blog</li>
+                            <li>Careers</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="top-ul-heading">
+                    <a [ngClass]="{'headColor':valueColor}"  #work routerLink="get_involved">
+                        Get Involved
+                    </a>
+                </li>
+                <li class="top-ul-heading">
+                    <button style="background-color: rgb(0, 168, 0);color: white;" class="donate"
+                        (click)="openDonateModal()" mat-raised-button>Donate</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div [ngClass]="{'head-Donate':valueColor}" (click)="DisplayShowModal()" class="side-Donate">
+    <mat-icon>favorite</mat-icon> &nbsp; Donate
+</div>
+
+<div *ngIf="giftValueShow" class="giftCard ">
+    <div class="gift-info row" (click)="openDonateModal()">
+        <div class="favo col-2">
+            <mat-icon>favorite</mat-icon>
+        </div>
+        <div class="favo-info col-10">
+            Complete your {{ giftAmount | currency:'INR':'symbol':'.0-0'}} gift to make a difference
+        </div>
+    </div>
+    <div class="gift-action">
+        <button (click)="openDonateModal()">
+            I'm ready
+        </button>
+        <button (click)="notToday()" style="border-top: 1px solid rgba(128, 128, 128, 0.329);">
+            Not today
+        </button>
+    </div>
+</div>
+
+<div [ngClass]="{'zIndex' : Zindex}" *ngIf="showModal" class="modal-content">
+    <div class="blo1">
+        <div class="img">
+            <img src="../../assets/ucarecdn.webp" alt="">
+        </div>
+        <div class="img-info">
+            <div class="img-logo">
+                <img src="../../assets/rainForestLogo.png" alt="">
+            </div>
+            <div class="img-title">
+                Save rainforests and wildlife, today.
+            </div>
+            <div class="title-info">
+                Every dollar you give to Rainforest Connection goes directly to <span class="fw-bold">
+                    protecting rainforests
+                </span>
+                from harmful human activities, like illegal logging, and <span class="fw-bold">
+                    preserving wildlife
+                </span>
+                around the world!. <br>
+                Up to <span class="fw-bold">
+                    90%
+                </span>
+                of logging in tropical rainforests is illegal and habitat destruction is the <span
+                    class="fw-bold">#1</span>
+                cause of plant and animal extinction. <span class="fw-bold"> Together, we can make a REAL difference for
+                    earth's tomorrows - today. </span>
+            </div>
+        </div>
+    </div>
+    <div class="blo2">
+        <app-money-donate *ngIf="first"></app-money-donate>
+        <app-crypto-donate *ngIf="!first"></app-crypto-donate>
+        <div>
+            <span *ngIf="first" (click)="changeTab()">
+                Donate crypto
+            </span>
+            <span *ngIf="!first" (click)="changeTab()">
+                Donate money
+            </span>
+        </div>
+    </div>
+</div>
+<div *ngIf="showModal" class="overlay" (click)="closeInfoBtn()">
+    <div class="close">
+        <mat-icon (click)="openDonateModal()">
+            close
+        </mat-icon>
+    </div>
+    <div class="actions row">
+        <div class="firstAct col-2">
+            <span (click)="action1()">
+                Is my donation secure?
+            </span>
+            <div *ngIf="footerAction1" class="blo1">
+                <div class="head fw-bold fs-large my-2">
+                    Is my donation secure?
+                </div>
+                <div class="para">
+                    Yes, we use industry-standard SSL technology to keep your information secure.
+                </div>
+                <div class="para">
+                    In addition, when donating crypto, you independently initiate the actual transfer of crypto from your wallet of choice. At no point during the checkout process do we ever have access or authorization to use or manage your wallet.
+                </div>
+            </div>
+        </div>
+        <div class="firstAct col-2">
+            <span (click)="action2()">
+                Is this donation tax-deductible?
+            </span>
+            <div *ngIf="footerAction2" class="blo1">
+                <div class="head fw-bold fs-large my-2">
+                    Is this donation tax-deductible?
+                </div>
+                <div class="para">
+                    Your gift is tax deductible as per your local regulations, as we are a tax exempt organization.
+                </div>
+                <div class="para">
+                    We will email you a donation receipt. Please keep this, as it is your official record to claim this donation as a tax deduction.
+                </div>
+            </div>
+        </div>
+        <div class="firstAct col-2">
+            <span (click)="action3()">
+                Can I cancel my recurring donation?
+            </span>
+            <div *ngIf="footerAction3" class="blo1">
+                <div class="head fw-bold fs-large my-2">
+                    Can I cancel my recurring donation?
+                </div>
+                <div class="par">
+                    Of course. You can cancel it any time by clicking the link in your donation receipt and following the instructions provided.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

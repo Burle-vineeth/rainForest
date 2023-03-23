@@ -1,0 +1,95 @@
+.subscribe {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.subscribe .main-content {
+    padding-left: 330px;
+}
+
+.subscribe .platinum .candid {
+    border: 9px double rgb(137, 137, 236);
+    padding: 10px 0;
+}
+
+.subscribe .platinum .candid .can {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: large;
+}
+
+.subscribe .platinum .candid-info {
+    font-size: x-small;
+    font-style: italic;
+    white-space: nowrap;
+    margin-left: -15px;
+    font-weight: bold;
+}
+
+.planet .img img {
+    width: 80%;
+}
+
+.connected {
+    text-align: start;
+    color: gray;
+}
+
+.connected .title {
+    letter-spacing: 2px;
+    line-height: 1.3rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.connected .title-info {
+    margin: 15px 0;
+    margin-bottom: 25px;
+}
+
+.connected .userDetails input {
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.connected .userDetails .mailcom {
+    width: 260px;
+}
+
+.connected button {
+    background-color: rgb(8, 221, 8);
+    margin-left: 10px;
+    padding: 0 20px;
+}
+
+.last {
+    margin-top: 50px;
+}
+
+.last a {
+    color: gray;
+}
+
+.last a:hover {
+    color: blue;
+}
+
+.last .contact {
+    margin: 20px 0;
+}
+
+.last a img {
+    width: 30px;
+}
+.last a {
+    margin: 0 10px;
+}
+
+.last .rainforest {
+    margin: 25px 0;
+    color: gray;
+}
