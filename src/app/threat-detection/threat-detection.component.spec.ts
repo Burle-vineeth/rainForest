@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ThreatDetectionComponent } from './threat-detection.component';
+import { SubscribeComponent } from '../subscribe/subscribe.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 describe('ThreatDetectionComponent', () => {
   let component: ThreatDetectionComponent;
@@ -8,9 +10,9 @@ describe('ThreatDetectionComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ThreatDetectionComponent ]
-    })
-    .compileComponents();
+      imports: [FormsModule, ReactiveFormsModule],
+      declarations: [ThreatDetectionComponent, SubscribeComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(ThreatDetectionComponent);
     component = fixture.componentInstance;

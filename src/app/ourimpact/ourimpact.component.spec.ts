@@ -1,6 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { OurimpactComponent } from './ourimpact.component';
+import { ImpactInfoComponent } from '../impact-info/impact-info.component';
+import { SubscribeComponent } from '../subscribe/subscribe.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 describe('OurimpactComponent', () => {
   let component: OurimpactComponent;
@@ -8,9 +11,13 @@ describe('OurimpactComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ OurimpactComponent ]
-    })
-    .compileComponents();
+      imports: [FormsModule, ReactiveFormsModule],
+      declarations: [
+        OurimpactComponent,
+        ImpactInfoComponent,
+        SubscribeComponent,
+      ],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(OurimpactComponent);
     component = fixture.componentInstance;

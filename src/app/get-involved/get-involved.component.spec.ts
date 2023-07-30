@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { GetInvolvedComponent } from './get-involved.component';
+import { SubscribeComponent } from '../subscribe/subscribe.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 describe('GetInvolvedComponent', () => {
   let component: GetInvolvedComponent;
@@ -8,9 +10,9 @@ describe('GetInvolvedComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ GetInvolvedComponent ]
-    })
-    .compileComponents();
+      imports: [FormsModule, ReactiveFormsModule],
+      declarations: [GetInvolvedComponent, SubscribeComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(GetInvolvedComponent);
     component = fixture.componentInstance;
